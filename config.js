@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import {firebase} from '@firebase/app';
 
 require('@firebase/firestore');
 const firebaseConfig = {
@@ -14,4 +14,4 @@ const firebaseConfig = {
 
 
 
-export default firebase.firestore
+export default firebase.firestore();

@@ -64,7 +64,7 @@ export default class TransactionScreen extends React.Component {
     db.collection('Transaction').add({
       studentId: this.state.scannedStudentId,
       bookId: this.state.scannedBookId,
-      data: firebase.firestore.Timestamp.now().toDate(),
+      date: firebase.firestore.Timestamp.now().toDate(),
       transactionType: 'Issue',
     });
 console.log(this.state.scannedBookId)
